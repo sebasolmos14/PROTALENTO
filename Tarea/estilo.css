@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+h1{
+    font-size: 24px bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0; 
+}
+
+li::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(/imagen/equis.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.element::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(/imagen/verde.ico);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+li{
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+li:hover{
+    background: lightyellow;
+}
+
+li:focus{
+    background: lightcyan;
+}
+
+.element{
+
+    color: gray;
+    text-decoration: line-through;
+}
